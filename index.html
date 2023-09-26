@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Noto+Serif&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Validação</h1>
+        <h2>Preencha os campos abaixo</h2>
+        <form id="form-validacao">
+            <input type="number" id="numero-a" required placeholder="Valor A" />
+            <input type="number" id="numero-b" required placeholder="Valor B" />
+            <button id="btn-validar" type="submit">Validar</button>
+        </form>
+        <p class="success-message"></p>
+        <p class="error-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
