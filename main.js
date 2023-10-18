@@ -1,12 +1,11 @@
 
 const form = document.getElementById('form-validacao');
 
-
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    let numeroA = document.getElementById('numero-a').value;
-    let numeroB = document.getElementById('numero-b').value;
+    let numeroA = parseFloat(document.getElementById('numero-a').value);
+    let numeroB = parseFloat(document.getElementById('numero-b').value);
     const mensagemSucesso = `Formulário validado com sucesso!`;
     const mensagemErro = `Não foi possível validar!`;
 
@@ -23,6 +22,10 @@ form.addEventListener('submit', function(e) {
         containerMensagemErro.innerHTML = mensagemErro;
         containerMensagemErro.style.display = 'block';
     }
+
+    setTimeout(function() {
+    location.reload();
+    }, 2000)
 });
 
 
